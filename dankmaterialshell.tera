@@ -1,0 +1,95 @@
+---
+whiskers:
+  version: "^2.9.0"
+  matrix:
+    - flavor
+    - accent
+  filename: "catppuccin.json"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
+light_flavor: "latte"
+---
+{
+  "id": "catppuccin",
+  "name": "Catppuccin",
+  "version": "1.0.0",
+  "author": "Catppuccin Org",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "dark": {},
+  "light": {},
+  "variants": {
+    "type": "multi",
+    "defaults": {
+      "dark": {
+        "accent": "mauve",
+        "flavor": "mocha"
+      },
+      "light": {
+        "accent": "mauve",
+        "flavor": "latte"
+      }
+    },
+    "flavors": [
+      {%- for id, flavor in flavors %}
+      {
+        "id": "{{ id }}",
+        "name": "{{ flavor.name }}",
+        "dark": {
+          "surface": "{{ flavor.colors.surface0.hex }}",
+          "surfaceText": "{{ flavor.colors.text.hex }}",
+          "surfaceVariant": "{{ flavor.colors.base.hex }}",
+          "surfaceVariantText": "{{ flavor.colors.subtext0.hex }}",
+          "background": "{{ flavor.colors.base.hex }}",
+          "backgroundText": "{{ flavor.colors.text.hex }}",
+          "outline": "{{ flavor.colors.overlay0.hex }}",
+          "surfaceContainer": "{{ flavor.colors.base.hex }}",
+          "surfaceContainerHigh": "{{ flavor.colors.mantle.hex }}",
+          "surfaceContainerHighest": "{{ flavor.colors.crust.hex }}",
+          "error": "{{ flavor.colors.red.hex }}",
+          "warning": "{{ flavor.colors.peach.hex }}",
+          "info": "{{ flavor.colors.blue.hex }}"
+        },
+        "light": {
+          "surface": "{{ flavors[light_flavor].colors.surface0.hex }}",
+          "surfaceText": "{{ flavors[light_flavor].colors.text.hex }}",
+          "surfaceVariant": "{{ flavors[light_flavor].colors.base.hex }}",
+          "surfaceVariantText": "{{ flavors[light_flavor].colors.subtext0.hex }}",
+          "background": "{{ flavors[light_flavor].colors.base.hex }}",
+          "backgroundText": "{{ flavors[light_flavor].colors.text.hex }}",
+          "outline": "{{ flavors[light_flavor].colors.overlay0.hex }}",
+          "surfaceContainer": "{{ flavors[light_flavor].colors.base.hex }}",
+          "surfaceContainerHigh": "{{ flavors[light_flavor].colors.mantle.hex }}",
+          "surfaceContainerHighest": "{{ flavors[light_flavor].colors.crust.hex }}",
+          "error": "{{ flavors[light_flavor].colors.red.hex }}",
+          "warning": "{{ flavors[light_flavor].colors.peach.hex }}",
+          "info": "{{ flavors[light_flavor].colors.blue.hex }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ],
+    "accents": [
+      {%- for accents in ["rosewater", "flamingo", "pink", "mauve", "red", "maroon", "peach", "yellow", "green", "teal", "sky", "sapphire", "blue", "lavender"] %}
+      {
+        "id": "{{ accents }}",
+        {%- for id, f in flavors %}
+        {%- if id != light_flavor %}
+        "{{ id }}": {
+          "primary": "{{ f.colors[accents].hex }}",
+          "primaryText": "{{ f.colors.base.hex }}",
+          "primaryContainer": "{{ f.colors[accents] | mix(color=f.colors.base, amount=0.7) | hex }}",
+          "secondary": "{{ f.colors[accents] | mix(color=f.colors.base, amount=0.5) | mod(saturation=20) | hex }}",
+          "surfaceTint": "{{ f.colors[accents] | mix(color=f.colors.base, amount=0.7) | hex }}"
+        },
+        {%- endif %}
+        {%- endfor %}
+        "light": {
+          "primary": "{{ flavors[light_flavor].colors[accents].hex }}",
+          "primaryText": "{{ flavors[light_flavor].colors.base.hex }}",
+          "primaryContainer": "{{ flavors[light_flavor].colors[accents] | mix(color=flavors[light_flavor].colors.base, amount=0.3) | hex }}",
+          "secondary": "{{ flavors[light_flavor].colors[accents] | mix(color=flavors[light_flavor].colors.base, amount=0.5) | mod(saturation=20) | hex }}",
+          "surfaceTint": "{{ flavors[light_flavor].colors[accents] | mix(color=flavors[light_flavor].colors.base, amount=0.3) | hex }}"
+        }
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ]
+  }
+}

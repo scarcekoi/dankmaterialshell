@@ -1,0 +1,596 @@
+{
+  "id": "catppuccin",
+  "name": "Catppuccin",
+  "version": "1.0.0",
+  "author": "Catppuccin Org",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "dark": {},
+  "light": {},
+  "variants": {
+    "type": "multi",
+    "defaults": {
+      "dark": {
+        "accent": "mauve",
+        "flavor": "mocha"
+      },
+      "light": {
+        "accent": "mauve",
+        "flavor": "latte"
+      }
+    },
+    "flavors": [
+      {
+        "id": "latte",
+        "name": "Latte",
+        "dark": {
+          "surface": "#ccd0da",
+          "surfaceText": "#4c4f69",
+          "surfaceVariant": "#eff1f5",
+          "surfaceVariantText": "#6c6f85",
+          "background": "#eff1f5",
+          "backgroundText": "#4c4f69",
+          "outline": "#9ca0b0",
+          "surfaceContainer": "#eff1f5",
+          "surfaceContainerHigh": "#e6e9ef",
+          "surfaceContainerHighest": "#dce0e8",
+          "error": "#d20f39",
+          "warning": "#fe640b",
+          "info": "#1e66f5"
+        },
+        "light": {
+          "surface": "#ccd0da",
+          "surfaceText": "#4c4f69",
+          "surfaceVariant": "#eff1f5",
+          "surfaceVariantText": "#6c6f85",
+          "background": "#eff1f5",
+          "backgroundText": "#4c4f69",
+          "outline": "#9ca0b0",
+          "surfaceContainer": "#eff1f5",
+          "surfaceContainerHigh": "#e6e9ef",
+          "surfaceContainerHighest": "#dce0e8",
+          "error": "#d20f39",
+          "warning": "#fe640b",
+          "info": "#1e66f5"
+        }
+      },
+      {
+        "id": "frappe",
+        "name": "Frappé",
+        "dark": {
+          "surface": "#414559",
+          "surfaceText": "#c6d0f5",
+          "surfaceVariant": "#303446",
+          "surfaceVariantText": "#a5adce",
+          "background": "#303446",
+          "backgroundText": "#c6d0f5",
+          "outline": "#737994",
+          "surfaceContainer": "#303446",
+          "surfaceContainerHigh": "#292c3c",
+          "surfaceContainerHighest": "#232634",
+          "error": "#e78284",
+          "warning": "#ef9f76",
+          "info": "#8caaee"
+        },
+        "light": {
+          "surface": "#ccd0da",
+          "surfaceText": "#4c4f69",
+          "surfaceVariant": "#eff1f5",
+          "surfaceVariantText": "#6c6f85",
+          "background": "#eff1f5",
+          "backgroundText": "#4c4f69",
+          "outline": "#9ca0b0",
+          "surfaceContainer": "#eff1f5",
+          "surfaceContainerHigh": "#e6e9ef",
+          "surfaceContainerHighest": "#dce0e8",
+          "error": "#d20f39",
+          "warning": "#fe640b",
+          "info": "#1e66f5"
+        }
+      },
+      {
+        "id": "macchiato",
+        "name": "Macchiato",
+        "dark": {
+          "surface": "#363a4f",
+          "surfaceText": "#cad3f5",
+          "surfaceVariant": "#24273a",
+          "surfaceVariantText": "#a5adcb",
+          "background": "#24273a",
+          "backgroundText": "#cad3f5",
+          "outline": "#6e738d",
+          "surfaceContainer": "#24273a",
+          "surfaceContainerHigh": "#1e2030",
+          "surfaceContainerHighest": "#181926",
+          "error": "#ed8796",
+          "warning": "#f5a97f",
+          "info": "#8aadf4"
+        },
+        "light": {
+          "surface": "#ccd0da",
+          "surfaceText": "#4c4f69",
+          "surfaceVariant": "#eff1f5",
+          "surfaceVariantText": "#6c6f85",
+          "background": "#eff1f5",
+          "backgroundText": "#4c4f69",
+          "outline": "#9ca0b0",
+          "surfaceContainer": "#eff1f5",
+          "surfaceContainerHigh": "#e6e9ef",
+          "surfaceContainerHighest": "#dce0e8",
+          "error": "#d20f39",
+          "warning": "#fe640b",
+          "info": "#1e66f5"
+        }
+      },
+      {
+        "id": "mocha",
+        "name": "Mocha",
+        "dark": {
+          "surface": "#313244",
+          "surfaceText": "#cdd6f4",
+          "surfaceVariant": "#1e1e2e",
+          "surfaceVariantText": "#a6adc8",
+          "background": "#1e1e2e",
+          "backgroundText": "#cdd6f4",
+          "outline": "#6c7086",
+          "surfaceContainer": "#1e1e2e",
+          "surfaceContainerHigh": "#181825",
+          "surfaceContainerHighest": "#11111b",
+          "error": "#f38ba8",
+          "warning": "#fab387",
+          "info": "#89b4fa"
+        },
+        "light": {
+          "surface": "#ccd0da",
+          "surfaceText": "#4c4f69",
+          "surfaceVariant": "#eff1f5",
+          "surfaceVariantText": "#6c6f85",
+          "background": "#eff1f5",
+          "backgroundText": "#4c4f69",
+          "outline": "#9ca0b0",
+          "surfaceContainer": "#eff1f5",
+          "surfaceContainerHigh": "#e6e9ef",
+          "surfaceContainerHighest": "#dce0e8",
+          "error": "#d20f39",
+          "warning": "#fe640b",
+          "info": "#1e66f5"
+        }
+      }
+    ],
+    "accents": [
+      {
+        "id": "rosewater",
+        "frappe": {
+          "primary": "#f2d5cf",
+          "primaryText": "#303446",
+          "primaryContainer": "#b8a5a6",
+          "secondary": "#a2748b",
+          "surfaceTint": "#b8a5a6"
+        },
+        "macchiato": {
+          "primary": "#f4dbd6",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b6a6a7",
+          "secondary": "#9f6f8d",
+          "surfaceTint": "#b6a6a7"
+        },
+        "mocha": {
+          "primary": "#f5e0dc",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b5a6a8",
+          "secondary": "#9d6d87",
+          "surfaceTint": "#b5a6a8"
+        },
+        "light": {
+          "primary": "#dc8a78",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#e9d2cf",
+          "secondary": "#d8c7c4",
+          "surfaceTint": "#e9d2cf"
+        }
+      },
+      {
+        "id": "flamingo",
+        "frappe": {
+          "primary": "#eebebe",
+          "primaryText": "#303446",
+          "primaryContainer": "#b5949a",
+          "secondary": "#9d6b80",
+          "surfaceTint": "#b5949a"
+        },
+        "macchiato": {
+          "primary": "#f0c6c6",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b3979c",
+          "secondary": "#996780",
+          "surfaceTint": "#b3979c"
+        },
+        "mocha": {
+          "primary": "#f2cdcd",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b3999e",
+          "secondary": "#98667c",
+          "surfaceTint": "#b3999e"
+        },
+        "light": {
+          "primary": "#dd7878",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#eacccf",
+          "secondary": "#d7c3c4",
+          "surfaceTint": "#eacccf"
+        }
+      },
+      {
+        "id": "pink",
+        "frappe": {
+          "primary": "#f4b8e4",
+          "primaryText": "#303446",
+          "primaryContainer": "#b990b5",
+          "secondary": "#996e9e",
+          "surfaceTint": "#b990b5"
+        },
+        "macchiato": {
+          "primary": "#f5bde6",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b791b2",
+          "secondary": "#95689a",
+          "surfaceTint": "#b791b2"
+        },
+        "mocha": {
+          "primary": "#f5c2e7",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b591b0",
+          "secondary": "#966597",
+          "surfaceTint": "#b591b0"
+        },
+        "light": {
+          "primary": "#ea76cb",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#eecce8",
+          "secondary": "#d9c7d5",
+          "surfaceTint": "#eecce8"
+        }
+      },
+      {
+        "id": "mauve",
+        "frappe": {
+          "primary": "#ca9ee6",
+          "primaryText": "#303446",
+          "primaryContainer": "#9c7eb6",
+          "secondary": "#7d6799",
+          "surfaceTint": "#9c7eb6"
+        },
+        "macchiato": {
+          "primary": "#c6a0f6",
+          "primaryText": "#24273a",
+          "primaryContainer": "#967cbe",
+          "secondary": "#766597",
+          "surfaceTint": "#967cbe"
+        },
+        "mocha": {
+          "primary": "#cba6f7",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#977ebb",
+          "secondary": "#756294",
+          "surfaceTint": "#977ebb"
+        },
+        "light": {
+          "primary": "#8839ef",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#d0b9f3",
+          "secondary": "#c2b8d0",
+          "surfaceTint": "#d0b9f3"
+        }
+      },
+      {
+        "id": "red",
+        "frappe": {
+          "primary": "#e78284",
+          "primaryText": "#303446",
+          "primaryContainer": "#b06a72",
+          "secondary": "#8b5d66",
+          "surfaceTint": "#b06a72"
+        },
+        "macchiato": {
+          "primary": "#ed8796",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b16b7a",
+          "secondary": "#865a69",
+          "surfaceTint": "#b16b7a"
+        },
+        "mocha": {
+          "primary": "#f38ba8",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b46b84",
+          "secondary": "#85596b",
+          "surfaceTint": "#b46b84"
+        },
+        "light": {
+          "primary": "#d20f39",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#e6adbc",
+          "secondary": "#c0a0a8",
+          "surfaceTint": "#e6adbc"
+        }
+      },
+      {
+        "id": "maroon",
+        "frappe": {
+          "primary": "#ea999c",
+          "primaryText": "#303446",
+          "primaryContainer": "#b27a83",
+          "secondary": "#92626f",
+          "surfaceTint": "#b27a83"
+        },
+        "macchiato": {
+          "primary": "#ee99a0",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b27781",
+          "secondary": "#8c5e6c",
+          "surfaceTint": "#b27781"
+        },
+        "mocha": {
+          "primary": "#eba0ac",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#ae7987",
+          "secondary": "#895b6c",
+          "surfaceTint": "#ae7987"
+        },
+        "light": {
+          "primary": "#e64553",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#ecbdc4",
+          "secondary": "#cfb7ba",
+          "surfaceTint": "#ecbdc4"
+        }
+      },
+      {
+        "id": "peach",
+        "frappe": {
+          "primary": "#ef9f76",
+          "primaryText": "#303446",
+          "primaryContainer": "#b67f68",
+          "secondary": "#8f6a5f",
+          "surfaceTint": "#b67f68"
+        },
+        "macchiato": {
+          "primary": "#f5a97f",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b7836a",
+          "secondary": "#8c695e",
+          "surfaceTint": "#b7836a"
+        },
+        "mocha": {
+          "primary": "#fab387",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b8876d",
+          "secondary": "#8b6a5d",
+          "surfaceTint": "#b8876d"
+        },
+        "light": {
+          "primary": "#fe640b",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#f4c6ae",
+          "secondary": "#c9b7ad",
+          "surfaceTint": "#f4c6ae"
+        }
+      },
+      {
+        "id": "yellow",
+        "frappe": {
+          "primary": "#e5c890",
+          "primaryText": "#303446",
+          "primaryContainer": "#af9b7a",
+          "secondary": "#948062",
+          "surfaceTint": "#af9b7a"
+        },
+        "macchiato": {
+          "primary": "#eed49f",
+          "primaryText": "#24273a",
+          "primaryContainer": "#b2a181",
+          "secondary": "#947e62",
+          "surfaceTint": "#b2a181"
+        },
+        "mocha": {
+          "primary": "#f9e2af",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#b8a889",
+          "secondary": "#978265",
+          "surfaceTint": "#b8a889"
+        },
+        "light": {
+          "primary": "#df8e1d",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#ead3b4",
+          "secondary": "#c6baaa",
+          "surfaceTint": "#ead3b4"
+        }
+      },
+      {
+        "id": "green",
+        "frappe": {
+          "primary": "#a6d189",
+          "primaryText": "#303446",
+          "primaryContainer": "#83a275",
+          "secondary": "#648e5e",
+          "surfaceTint": "#83a275"
+        },
+        "macchiato": {
+          "primary": "#a6da95",
+          "primaryText": "#24273a",
+          "primaryContainer": "#80a57a",
+          "secondary": "#5c8a61",
+          "surfaceTint": "#80a57a"
+        },
+        "mocha": {
+          "primary": "#a6e3a1",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#7ea87f",
+          "secondary": "#5b8964",
+          "surfaceTint": "#7ea87f"
+        },
+        "light": {
+          "primary": "#40a02b",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#bad8b8",
+          "secondary": "#9fbd9b",
+          "surfaceTint": "#bad8b8"
+        }
+      },
+      {
+        "id": "teal",
+        "frappe": {
+          "primary": "#81c8be",
+          "primaryText": "#303446",
+          "primaryContainer": "#699b9a",
+          "secondary": "#588084",
+          "surfaceTint": "#699b9a"
+        },
+        "macchiato": {
+          "primary": "#8bd5ca",
+          "primaryText": "#24273a",
+          "primaryContainer": "#6da29f",
+          "secondary": "#577e83",
+          "surfaceTint": "#6da29f"
+        },
+        "mocha": {
+          "primary": "#94e2d5",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#71a8a4",
+          "secondary": "#588284",
+          "surfaceTint": "#71a8a4"
+        },
+        "light": {
+          "primary": "#179299",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#aed4d9",
+          "secondary": "#93b4b7",
+          "surfaceTint": "#aed4d9"
+        }
+      },
+      {
+        "id": "sky",
+        "frappe": {
+          "primary": "#99d1db",
+          "primaryText": "#303446",
+          "primaryContainer": "#79a2af",
+          "secondary": "#628494",
+          "surfaceTint": "#79a2af"
+        },
+        "macchiato": {
+          "primary": "#91d7e3",
+          "primaryText": "#24273a",
+          "primaryContainer": "#71a3b0",
+          "secondary": "#5e7e8c",
+          "surfaceTint": "#71a3b0"
+        },
+        "mocha": {
+          "primary": "#89dceb",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#69a3b3",
+          "secondary": "#5a7b88",
+          "surfaceTint": "#69a3b3"
+        },
+        "light": {
+          "primary": "#04a5e5",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#a8daf0",
+          "secondary": "#a4b9c2",
+          "surfaceTint": "#a8daf0"
+        }
+      },
+      {
+        "id": "sapphire",
+        "frappe": {
+          "primary": "#85c1dc",
+          "primaryText": "#303446",
+          "primaryContainer": "#6b96af",
+          "secondary": "#5e7b8e",
+          "surfaceTint": "#6b96af"
+        },
+        "macchiato": {
+          "primary": "#7dc4e4",
+          "primaryText": "#24273a",
+          "primaryContainer": "#6396b1",
+          "secondary": "#5a7486",
+          "surfaceTint": "#6396b1"
+        },
+        "mocha": {
+          "primary": "#74c7ec",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#5a95b4",
+          "secondary": "#567080",
+          "surfaceTint": "#5a95b4"
+        },
+        "light": {
+          "primary": "#209fb5",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#b1d8e2",
+          "secondary": "#9eb9be",
+          "surfaceTint": "#b1d8e2"
+        }
+      },
+      {
+        "id": "blue",
+        "frappe": {
+          "primary": "#8caaee",
+          "primaryText": "#303446",
+          "primaryContainer": "#7086bc",
+          "secondary": "#637195",
+          "surfaceTint": "#7086bc"
+        },
+        "macchiato": {
+          "primary": "#8aadf4",
+          "primaryText": "#24273a",
+          "primaryContainer": "#6c85bc",
+          "secondary": "#5f6d8f",
+          "surfaceTint": "#6c85bc"
+        },
+        "mocha": {
+          "primary": "#89b4fa",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#6987bd",
+          "secondary": "#5d6c8b",
+          "surfaceTint": "#6987bd"
+        },
+        "light": {
+          "primary": "#1e66f5",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#b0c7f5",
+          "secondary": "#b1bacb",
+          "surfaceTint": "#b0c7f5"
+        }
+      },
+      {
+        "id": "lavender",
+        "frappe": {
+          "primary": "#babbf1",
+          "primaryText": "#303446",
+          "primaryContainer": "#9192be",
+          "secondary": "#7175a1",
+          "surfaceTint": "#9192be"
+        },
+        "macchiato": {
+          "primary": "#b7bdf8",
+          "primaryText": "#24273a",
+          "primaryContainer": "#8b91bf",
+          "secondary": "#6b709d",
+          "surfaceTint": "#8b91bf"
+        },
+        "mocha": {
+          "primary": "#b4befe",
+          "primaryText": "#1e1e2e",
+          "primaryContainer": "#878ec0",
+          "secondary": "#676d99",
+          "surfaceTint": "#878ec0"
+        },
+        "light": {
+          "primary": "#7287fd",
+          "primaryText": "#eff1f5",
+          "primaryContainer": "#c9d1f7",
+          "secondary": "#cdcfdd",
+          "surfaceTint": "#c9d1f7"
+        }
+      }
+    ]
+  }
+}
