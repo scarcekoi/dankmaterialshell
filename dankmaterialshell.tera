@@ -21,23 +21,14 @@ default_accent: "mauve"
   "variants": {
     "type": "multi",
     "defaults": {
-      "dark": {
-        "accent": "{{ default_accent }}",
-        "flavor": "{{ default_flavor }}"
-      },
-      "light": {
-        "accent": "{{ default_accent }}",
-        "flavor": "{{ light_flavor }}"
-      }
+      "dark": { "flavor": "{{ default_flavor }}", "accent": "{{ default_accent }}" },
+      "light": { "flavor": "{{ light_flavor }}", "accent": "{{ default_accent }}" }
     },
     "flavors": [
       {%- for id, flavor in flavors %}
       {
         "id": "{{ id }}",
         "name": "{{ flavor.name }}",
-        {% if flavor.light -%}
-        "dark": {},
-        {% endif -%}
         "{% if flavor.dark %}dark{% else %}light{% endif %}": {
           "surface": "{{ flavor.colors.surface0.hex }}",
           "surfaceText": "{{ flavor.colors.text.hex }}",
@@ -53,9 +44,6 @@ default_accent: "mauve"
           "warning": "{{ flavor.colors.peach.hex }}",
           "info": "{{ flavor.colors.blue.hex }}"
         }
-        {%- if flavor.dark %},
-        "light": {}
-        {%- endif %}
       }{% if not loop.last %},{% endif %}
       {%- endfor %}
     ],

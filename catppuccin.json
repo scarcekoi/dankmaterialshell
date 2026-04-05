@@ -9,20 +9,13 @@
   "variants": {
     "type": "multi",
     "defaults": {
-      "dark": {
-        "accent": "mauve",
-        "flavor": "mocha"
-      },
-      "light": {
-        "accent": "mauve",
-        "flavor": "latte"
-      }
+      "dark": { "flavor": "mocha", "accent": "mauve" },
+      "light": { "flavor": "latte", "accent": "mauve" }
     },
     "flavors": [
       {
         "id": "latte",
         "name": "Latte",
-        "dark": {},
         "light": {
           "surface": "#ccd0da",
           "surfaceText": "#4c4f69",
@@ -56,8 +49,7 @@
           "error": "#e78284",
           "warning": "#ef9f76",
           "info": "#8caaee"
-        },
-        "light": {}
+        }
       },
       {
         "id": "macchiato",
@@ -76,8 +68,7 @@
           "error": "#ed8796",
           "warning": "#f5a97f",
           "info": "#8aadf4"
-        },
-        "light": {}
+        }
       },
       {
         "id": "mocha",
@@ -96,8 +87,7 @@
           "error": "#f38ba8",
           "warning": "#fab387",
           "info": "#89b4fa"
-        },
-        "light": {}
+        }
       }
     ],
     "accents": [
